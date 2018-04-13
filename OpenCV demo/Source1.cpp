@@ -8,11 +8,11 @@ using namespace cv;
 int main(int argc, char** argv) {
 
 	//打开摄像头
-	//VideoCapture cap(0);
+	VideoCapture cap(0);
 
 	//打开视频
 
-	VideoCapture cap("d:/1.mp4");
+	//VideoCapture cap("d:/1.mp4");
 
 
 	//检测是否打开
@@ -26,6 +26,9 @@ int main(int argc, char** argv) {
 	//创建窗口
 	namedWindow("edges", 1);
 
+
+
+
 	for (;;)
 	{
 		Mat frame;
@@ -34,7 +37,7 @@ int main(int argc, char** argv) {
 		//未读取异常处理
 		if (frame.empty())
 			break;
-
+	
 
 		//图像转为灰度	
 
