@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
 
 	//VideoCapture cap("d:/1.mp4");
 
-
+	
 	//¼ì²âÊÇ·ñ´ò¿ª
 
 	if (!cap.isOpened()) {
